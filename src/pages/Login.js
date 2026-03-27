@@ -176,7 +176,7 @@ function Login({ onLogin }){
           onClick={isSignup ? handleSignup : handleLogin}
           disabled={loading}
         >
-          {loading ? 'Please wait...' : isSignup ? '🎉 Create Account' : '🔐 Login'}
+          {loading ? 'Please wait...' : isSignup ? ' Create Account' : ' Login'}
         </button>
 
         <p style={styles.switchText}>
