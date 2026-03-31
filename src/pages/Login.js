@@ -89,6 +89,8 @@ function Login({ onLogin }){
       setConfirmPin('');
       setHolderName('');
     };
+    //test
+    console.log('API URL:', process.env.REACT_APP_API_URL);
 
     return (
     <div style={styles.container}>
