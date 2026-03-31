@@ -19,7 +19,7 @@ function Login({ onLogin }){
         setError('');
         
         try{
-            const response = await fetch('http://localhost:8080/auth/login',
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/auth/login`,
                 {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json' },
@@ -62,7 +62,7 @@ function Login({ onLogin }){
       setLoading(true);
       setError('');
       try{
-        const response = await fetch('http://localhost:8080/auth/signup',{
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/auth/signup`,{
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({cardNumber, holderName, pin})

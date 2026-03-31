@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from "react";
 
-const API = 'http://localhost:8080/api/account';
+const API = `${process.env.REACT_APP_API_URL}/api/account`;
 
 function Dashboard({token, cardNumber, onLogout}){
     const [balance, setBalance] = useState(null);
